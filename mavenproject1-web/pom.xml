@@ -25,6 +25,7 @@
             <artifactId>glassfish-embedded-all</artifactId>
             <version>3.1.2.2</version>
             <type>jar</type>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>javax</groupId>
