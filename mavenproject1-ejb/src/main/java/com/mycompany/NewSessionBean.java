@@ -41,7 +41,7 @@ public class NewSessionBean implements NewSessionBeanLocal {
             }
             
             Tabela1 tabela1 = list.get(0);
-            
+            /*
             Tabela2 tabela2Original = tabela1.getTabela2List().get(0);
             entityManager.detach(tabela1);
 
@@ -92,13 +92,8 @@ public class NewSessionBean implements NewSessionBeanLocal {
             for (Class classeListar : listClass) {
                 System.out.println("\"" + classeListar + "\"");
             }*/
-            
-try{
-    
-}   catch(Exception ex)         {
-    
-}
-            
+
+            /*
             Class[] arrayClasses = new Class[listClass.size()];
             listClass.toArray(arrayClasses);
             Cloner cloner  = new Cloner();
@@ -133,7 +128,7 @@ try{
             //tabela3Nova = new Cloner().shallowClone(tabela3Nova);
             //tabela3Nova.setValor("aww p");
             //tabela2Nova.getTabela3List().set(0, tabela3Nova);            
-            
+            */
             entityManager.merge(tabela1);  
             return tabela1;
         
