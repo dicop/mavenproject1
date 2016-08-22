@@ -8,6 +8,7 @@ package com.mycompany;
 import com.hascode.entity.Tabela1;
 import com.hascode.entity.Tabela2;
 import com.hascode.entity.Tabela3;
+import com.mycompany.maven.jar.Utilitaria;
 import com.rits.cloning.Cloner;
 import java.util.ArrayList;
 import java.util.List;
@@ -129,6 +130,9 @@ public class NewSessionBean implements NewSessionBeanLocal {
             //tabela3Nova.setValor("aww p");
             //tabela2Nova.getTabela3List().set(0, tabela3Nova);            
             */
+            
+            Utilitaria.teste();
+            
             entityManager.merge(tabela1);  
             return tabela1;
         
